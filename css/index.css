@@ -146,7 +146,7 @@ a {
 .hidden {
     display: none;
 }
-.mobile-submenu-lg {
+.mobile-submenu-lg , .laptop-submenu-lg{
     z-index: 3;
     width: 55vw;
     height: 350px;
@@ -167,6 +167,9 @@ a {
     white-space: nowrap;
 }
 .mobile:hover .mobile-submenu-lg{
+    visibility: visible;
+}
+.laptops:hover .laptop-submenu-lg{
     visibility: visible;
 }
 .submenu-lg-col li:hover{
