@@ -7,6 +7,11 @@ $(document).ready(function () {
     })
     $(".mobile-click").click(function () {
         $(".mobile-sub-menu-sm").toggleClass("custom-height");
+        $(".laptop-sub-menu-sm").addClass("custom-height");
+    })
+    $(".laptop-click").click(function () {
+        $(".laptop-sub-menu-sm").toggleClass("custom-height");
+        $(".mobile-sub-menu-sm").addClass("custom-height");
     })
 
     $($(".mobile-titles")[0]).mouseenter(function () {
