@@ -64,4 +64,23 @@ $(document).ready(function () {
         $(".footer-sub-3").toggleClass("custom-height");
     })
 
+    activeSlider = 0;
+    let sliderContainer = document.querySelector(".slider-2-container");
+    let slider2Right = function () {
+        let sliderWidth = sliderContainer.clientWidth;
+        sliderContainer.style.marginLeft = `-${sliderWidth +25}px`;
+        $(".right").addClass("invisible");
+    }
+    let slider2Left = function () {
+        let sliderWidth = sliderContainer.clientWidth;
+        sliderContainer.style.marginLeft = `-${sliderWidth +20}px`;
+        $(".left").removeClass("invisible");
+    }
+
+    $(".right").click(slider2Right);
+    $(".left").click(slider2Left);
+
+
+
+
 });

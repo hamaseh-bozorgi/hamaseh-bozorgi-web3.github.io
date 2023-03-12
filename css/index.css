@@ -151,6 +151,9 @@ a {
 .hidden {
     display: none;
 }
+.invisible{
+    visibility: hidden;
+}
 .mobile-submenu-lg , .laptop-submenu-lg , .displays-submenu-lg ,.network-submenu-lg ,.motherboard-submenu-lg {
     z-index: 3;
     width: 55vw;
@@ -230,16 +233,17 @@ a {
     transform: scale(2);
 }
 
-.slider-container {
+.slider-container , .slider-2 {
     white-space: nowrap;
     overflow: hidden;
+
 }
 .slider-container img{
     margin-right: -4px;
     transition: all 800ms linear 0s;
    
 }
-.slider-container i{
+.slider-container i , .slider-2 i{
     width: 40px;
     height: 40px;
     font-size: 35px;
@@ -254,9 +258,22 @@ a {
     color: #4d4d4d;
     
 }
-.right-btn{
+.right-btn , .right{
     right: 0;
     margin-right: 10px;
+}
+
+
+.slider-2 img{
+    width: 32vw;
+    margin-right: 10px;
+}
+.slider-2 i {
+    background-color:transparent;
+    border: 1px solid black;
+}
+.slider-2-container{
+    transition: all 500ms linear 0s;
 }
 
 @media screen and (max-width:767px) {
@@ -322,29 +339,6 @@ a {
         height: 700px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
